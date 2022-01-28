@@ -1,0 +1,97 @@
+#left-wheel{
+    position: absolute;
+    bottom: 670px;
+    left: 800px;
+    animation:  wheels 3s  linear ;
+}
+#right-wheel{
+    position: absolute;
+    bottom: 670px;
+    left: 1120px;
+    animation:  wheels 3s  linear;
+}
+
+#boy{
+    position: absolute;
+    left: 830px;
+    bottom: 710px;
+    animation: boy 3s linear;
+}
+#baloon{
+    position: absolute;
+    bottom: 800px;
+    left: 1400px;
+    animation: baloon 3s linear;
+}
+#baloon2{
+    position: absolute;
+    bottom: 700px;
+    left: 500px;
+    animation: baloon2 3s linear;
+}
+#shadow{
+    position: absolute;
+    left: 760px;
+    bottom: 620px;
+    animation: shadow 3s linear;
+}
+#background{
+    position: relative;
+    height: 1000px;
+    width: 1700px;
+    left: -9%;
+    top: 20%;
+    
+}
+
+@keyframes wheels {
+    0%{
+        transform: translateX(0%) rotate(0deg) ;
+        
+        
+    }
+    100%{
+        transform: translateX(65%) rotate(360deg) ;
+    }
+}
+
+@keyframes boy {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(30%);
+    }
+}
+
+@keyframes baloon {
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(-60%);
+    }
+    
+}
+@keyframes baloon2 {
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(-90%);
+    }
+}
+@keyframes shadow {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(5%);
+    }
+    
+}
+
+body{
+    text-align: center;
+    background-image: url('/svgs/background.svg');
+}
